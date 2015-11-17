@@ -1,0 +1,2 @@
+POST	/watermark					watermark.WatermarkController.createWatermark
+GET 	/watermark/:processId		watermark.WatermarkController.pollWatermarkStatus(processId: watermark.model.ProcessId)
