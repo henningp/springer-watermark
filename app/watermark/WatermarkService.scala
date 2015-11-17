@@ -11,7 +11,7 @@ import scala.concurrent.Future
 
 /*
   The Future return types are just here to show how things would look if we had some kind of asynchronous backend,
-  like a database. It also complicates the unit tests.
+  like a database. It also nicely complicates the matchers in the unit tests.
  */
 @Singleton
 class WatermarkService @Inject() (watermarkGenerator: WatermarkGenerator)  {

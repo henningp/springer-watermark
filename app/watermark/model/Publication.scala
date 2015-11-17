@@ -26,6 +26,10 @@ case class Journal(title: String, author: String, watermark: Option[Watermark]) 
 
 object Publication {
 
+  /*
+    The implicit Formats would all get unit tests if it wasn't late already.
+   */
+
   implicit val publicationFormat: Format[Publication] = new Format[Publication] {
     override def writes(publication: Publication): JsValue = {
       publication match {
